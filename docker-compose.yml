@@ -3,17 +3,13 @@ services:
   redis-server:
     image: 'redis'
   server:
-    build:
-      context: ./server
-      dockerfile: Dockerfile
+    image: 'nitishyadav169/voosh-server:latest'
     ports:
       - "8081:8081"
   web:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile.dev
+    image: 'nitishyadav169/voosh-client:latest'
     ports:
       - '3000:3000'
     volumes:
       - /app/node_modules
-      - ./frontend:/app
+      - ./client:/app

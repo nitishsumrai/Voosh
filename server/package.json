@@ -3,7 +3,8 @@
         "express": "*",
         "redis": "2.8.0",
         "csv-parser":"*",
-        "bluebird":"*"
+        "bluebird":"*",
+        "cors":"*"
     },
     "scripts": {
         "start": "node index.js"

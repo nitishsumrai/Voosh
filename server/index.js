@@ -4,9 +4,10 @@ const csv = require('csv-parser');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 var Promise = require("bluebird");
+var cors = require('cors');
 
 const app = express();
-
+app.use(cors());
 app.use(bodyParser.json({ strict: false, limit: '50mb' }));
 
 const results = [];
