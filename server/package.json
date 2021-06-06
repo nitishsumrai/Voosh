@@ -1,10 +1,10 @@
 {
     "dependencies": {
+        "bluebird": "*",
+        "cors": "*",
+        "csv-parser": "*",
         "express": "*",
-        "redis": "2.8.0",
-        "csv-parser":"*",
-        "bluebird":"*",
-        "cors":"*"
+        "redis": "2.8.0"
     },
     "scripts": {
         "start": "node index.js"
