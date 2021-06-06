@@ -6,7 +6,7 @@ export const useAsync = (setSpinner) => {
   const hook = () => {
     let isSubscribed = true;
     const fetchData = async () => {
-      let resBody = await axios.get("http://localhost:8081/");
+      let resBody = await axios.get("http://3.137.205.68:8081/");
       resBody = resBody.data.list;
       if (isSubscribed) {
         if(!!setSpinner)
